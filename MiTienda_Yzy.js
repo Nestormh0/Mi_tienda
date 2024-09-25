@@ -16,7 +16,7 @@ const productos = [
     let seleccion = prompt(`Selecciona un producto:\n${opciones}`);
     let indice = parseInt(seleccion);
   
-    if (indice >= 0 && indice < productos.length) {
+    if (indice >= 1 && indice < productos.length) {
       agregarAlCarrito(productos[indice]);
       mostrarMenu(); // Mostrar el menú nuevamente para agregar más productos
     } else if (indice === 0) {
